@@ -7,14 +7,14 @@ import sys, os
 
 """ Banner """
 def menu():
-print ("#     #                  ###### ")
-print ("#  #  # ###### #####     #     # #####  #    # ##### ######  ")
-print ("#  #  # #      #    #    #     # #    # #    #   #   #     ")
-print ("#  #  # #####  #####     ######  #    # #    #   #   #####   ")
-print ("#  #  # #      #    #    #     # #####  #    #   #   #    ")
-print ("#  #  # #      #    #    #     # #   #  #    #   #   #     ")
-print (" ## ##  ###### #####     ######  #    #  ####    #   ###### ")
-print (" Developed By STAR Sec - https://github.com/STAR-Sec")
+     print ("#     #                  ###### ")
+     print ("#  #  # ###### #####     #     # #####  #    # ##### ######  ")
+     print ("#  #  # #      #    #    #     # #    # #    #   #   #     ")
+     print ("#  #  # #####  #####     ######  #    # #    #   #   #####   ")
+     print ("#  #  # #      #    #    #     # #####  #    #   #   #    ")
+     print ("#  #  # #      #    #    #     # #   #  #    #   #   #     ")
+     print (" ## ##  ###### #####     ######  #    #  ####    #   ###### ")
+     print (" Developed By STAR Sec - https://github.com/STAR-Sec")
      print (" --- |Bruteforcing Tool| ---")   
      print (" 1 - Web Bruteforce ")
      print (" 2 - More Comming Soon ")
@@ -39,13 +39,13 @@ while True:
                  Password = input("Password: ")
                  os.system("clear")
                  IP = input("Target IP/Address: ")
-                 Port = input("Target Port")
+                 Port = input("Target Port: ")
                  os.system("hydra -l %s -p %s %s -s %s http-post-form '/:password=^PASS^:Invalid password!'" % (Username, Password, IP, Port))
              elif (Choice2 == '02' or Choice2 == '2'):
                  Password = input("Path To Wordlist: ")
                  os.system("clear")
                  IP = input("Target IP/Address: ")
-                 Port = input("Target Port")
+                 Port = input("Target Port: ")
                  os.system("hydra -l %s -p %s %s -s %s http-post-form '/:password=^PASS^:Invalid password!'" % (Username, Password, IP, Port))
               
         
